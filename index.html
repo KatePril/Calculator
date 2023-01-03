@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-warning">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Calculator</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div> -->
+    </div>
+  </nav>
+
+  <main>
+    <section id="first">
+        <div class="card border-primary mb-3" style="width: 80rem;">
+            <div class="card-header">Калькулятор</div>
+            <div class="card-body">
+              <h4 class="card-title text-danger">Важлива інформація!</h4>
+              <p class="card-text">Додаткові функції та вікно історії НЕ Є ДОСТУПНИМИ в мобільній версії.</p>
+            </div>
+        </div>
+    </section>
+    <section id="second">
+        <aside id="left">
+          <div class="accordion" id="accordionExample" style="width: 100%;">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Додаткові функції
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                <div class="accordion-body">
+                  <div class="row-btn">
+                    <button type="button" class="btn btn-success" id="btnRoot2" onclick=""><sup>2</sup>√x</button>
+                    <button type="button" class="btn btn-success" id="btnPow2" onclick="">x<sup> 2</sup></button>
+                  </div>
+                  <div class="row-btn">
+                    <button type="button" class="btn btn-success" id="btnRoot3" onclick=""><sup>3</sup>√x</button>
+                    <button type="button" class="btn btn-success" id="btnPow3" onclick="">x<sup> 3</sup></button>
+                  </div>
+                  <div class="row-btn">
+                    <button type="button" class="btn btn-success" id="btnRootN" onclick=""><sup>n</sup>√x</button>
+                    <button type="button" class="btn btn-success" id="btnPowN" onclick="">x<sup> n</sup></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Тригометричні функції
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+                <div class="accordion-body">
+                  <div class="row-btn">
+                    <button type="button" class="btn btn-success" id="btnSin" onclick="">sin</button>
+                    <button type="button" class="btn btn-success" id="btnCos" onclick="">cos</button>
+                  </div>
+                  <div class="row-btn">
+                    <button type="button" class="btn btn-success" id="btnTg" onclick="">tg</button>
+                    <button type="button" class="btn btn-success" id="btnCtg" onclick="">ctg</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Ще більше функцій
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="row-btn">
+                    <button type="button" class="btn btn-success" id="btnLog2" onclick="">log <sub>2</sub></button>
+                    <button type="button" class="btn btn-success" id="btnLogX" onclick="">log <sub>10</sub></button>
+                  </div>
+                  <div class="row-btn">
+                    <button type="button" class="btn btn-success" id="btnModule" onclick="">| x |</button>
+                    <button type="button" class="btn btn-success" id="btnDiv1" onclick=""><sup>1</sup>/x</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>    
+        </aside>
+        <article style="height: 550px;">
+            <div class="card text-white bg-success mb-3" id="body">
+                <div class="card-header">Калькулятор</div>
+                <div class="card-body">
+                    <input type="text" class="form-control" id="input">
+                    <div class="forBtns">
+                      <div class="row-btn">
+                        <button type="button" class="btn btn-danger" id="btnAC">AC</button>
+                        <button type="button" class="btn btn-danger" id="btnC">C</button>
+                        <button type="button" class="btn btn-warning" id="btnPercentage">%</button>
+                        <button type="button" class="btn btn-light" id="btnDiv">/</button>
+                      </div>
+                      <div class="row-btn">
+                        <button type="button" class="btn btn-warning" id="btn7">7</button>
+                        <button type="button" class="btn btn-warning" id="btn8">8</button>
+                        <button type="button" class="btn btn-warning" id="btn9">9</button>
+                        <button type="button" class="btn btn-light" id="btnMult">*</button>
+                      </div>
+                      <div class="row-btn">
+                        <button type="button" class="btn btn-warning" id="btn4">4</button>
+                        <button type="button" class="btn btn-warning" id="btn5">5</button>
+                        <button type="button" class="btn btn-warning" id="btn6">6</button>
+                        <button type="button" class="btn btn-light" id="btnMin">-</button>
+                      </div>
+                      <div class="row-btn">
+                        <button type="button" class="btn btn-warning" id="btn1">1</button>
+                        <button type="button" class="btn btn-warning" id="btn2">2</button>
+                        <button type="button" class="btn btn-warning" id="btn3">3</button>
+                        <button type="button" class="btn btn-light" id="btnPlus">+</button>
+                      </div>
+                      <div class="row-btn">
+                        <button type="button" class="btn btn-warning" id="btnM">-</button>
+                        <button type="button" class="btn btn-warning" id="btn0">0</button>
+                        <button type="button" class="btn btn-warning" id="btnP">.</button>
+                        <button type="button" class="btn btn-primary" id="btnRes">=</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <aside id="right">
+          <div class="accordion" id="accordionExample" style="width: 100%;">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingяFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
+                  Історія
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample" style="">
+                <div class="accordion-body">
+                  <table class="table table-hover">
+                    <tbody id="history"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+    </section>
+    
+  </main>
+      
+  <script src="app.js"></script>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="custom.js"></script>
+  <script src="prism.js"></script>
+</body>
+</html>
